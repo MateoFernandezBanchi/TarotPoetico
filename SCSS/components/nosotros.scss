@@ -1,0 +1,150 @@
+/* NOSOTROS */
+
+@import "../variables/color.scss";
+
+.main-nosotros {
+    //  margin: 5rem 8rem 4rem 20rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 50%;
+
+    @media (max-width:860px) {
+        margin-top: 6rem;
+        width: 80%;
+    }
+
+}
+
+.main-nosotros-titulo2 {
+    background-color: #380762;
+    color: white;
+    border-radius: 15px;
+
+}
+
+.presentacion {
+    background-color: rgba($violeta-1, 0.7);
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    p {
+        width: 60%;
+        margin: 0 auto;
+
+    }
+}
+
+.sobrenosotros {
+    background-image: linear-gradient(to right, #9269A1 0%, #380762 100%);
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+.espectaculo2 img {
+
+    width: 599px;
+}
+
+.integrantes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fotogrupo {
+    width: 200px;
+}
+
+.imagenesgrupo {
+    position: absolute;
+    right: 0px;
+    transition: opacity 1.5s ease-out;
+
+    img {
+        width: 300px;
+    }
+
+    &:hover {
+        opacity: 0;
+    }
+}
+
+.carla,
+.matias,
+.mateo {
+    background-image: $degrade-3;
+    color: white;
+    position: relative;
+    width: 20%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 6px 6px $violeta-3;
+    margin-top: 2rem;
+
+    h3 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    @media (max-width:1140px) {
+        width: 15rem;
+    }
+}
+
+
+
+.historiagrupo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+
+
+}
+
+.textohistoria {
+    position: relative;
+    width: 80%;
+    margin-bottom: 3rem;
+    bottom: 200px;
+    border-radius: 20px;
+    box-shadow: 6px 6px $violeta-3;
+
+    @media (min-width:768px) {
+        width: 50%;
+    }
+
+}
+
+.imagenespectaculo img {
+    width: 80%;
+    margin-top: 50px;
+    border-radius: 20px;
+
+    @media (min-width:600px) {
+        width: 100%;
+    }
+
+    @media (min-width:768px) {
+        width: 60%;
+    }
+
+    @media (min-width:992px) {
+        width: 100%;
+    }
+
+    @media (max-width:768px) {
+        margin-left: 2.5rem;
+    }
+
+}
+
+.instagram {
+    margin-bottom: 5rem;
+}

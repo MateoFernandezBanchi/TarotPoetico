@@ -1,0 +1,83 @@
+/* CONTACTO */
+
+@import "../variables/color.scss";
+
+.label {
+    margin-top: 2rem;
+}
+
+.contacto-main-title {
+    background-image: linear-gradient(to right, #9269A1 0%, #380762 100%);
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+    top: 5rem;
+    margin: 0 auto;
+}
+
+.contacto-main-pregunta {
+    padding-top: 5rem;
+}
+
+.maincontacto {
+    text-align: center;
+}
+
+.formulario {
+
+    margin: 5rem 3rem 5rem 3rem;
+    text-align: center;
+}
+
+.formulario-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    textarea {
+        resize: none;
+    }
+    
+}
+
+.input-texto {
+    width: 100%;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: $violeta-1;
+    color: white;
+    // width: 80%;
+    border-radius: 20px;
+    box-shadow: 6px 6px $violeta-3;
+
+    @media (min-width: 768px) {
+        width: 100%;
+    }
+
+    @media (min-width: 1140px) {
+        width: 50%;
+    }
+}
+
+.formulario-imagen {
+    flex-direction: column;
+    margin-right: 5rem;
+    margin-top: 4rem;
+
+    img {
+        width: 100%;
+
+        @media (min-width: 992px) {
+            width: 900px;
+        }
+
+        @media (min-width: 1140px) {
+            width: 120%;
+        }
+    }
+}

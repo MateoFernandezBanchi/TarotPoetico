@@ -1,0 +1,170 @@
+/* CURSOS */
+
+@import "../variables/color.scss";
+
+
+.cursos-main-title {
+    background-image: $degrade-1;
+   width: 100%;
+   border-radius: 10px;
+   position: relative;
+   bottom: 6rem;
+   @media (max-width:1140px) {
+    bottom: 0rem;
+
+}
+}
+
+.cursos-main-parrafo {
+    border-radius: 3rem;
+    z-index: 2;
+    padding: 8rem 2rem 3rem 2rem;
+    text-align: center;
+    @media (max-width:1140px) {
+        position: relative;
+        right: 2.5rem;
+        top: 0rem;
+        padding-top: 2rem;
+
+    }
+     &:hover {
+            background-color: #380762;
+            transition: 3s;
+            a {
+            color: white;
+            &:hover {
+                color: $violeta-2;
+            }
+        }
+         }
+        
+     }
+
+.cursos-main-imagen img {
+    position: relative;
+    // top: 3rem;
+    width: 100%;
+    transition: all 1s;
+    right: 3rem;
+    @media (max-width:1140px) {
+    margin-left: 2rem;
+    animation: imagencursos 3s;
+    
+
+}
+@media (min-width:768px) {
+    position: relative;
+    left: 3rem;
+}
+@media (min-width:768px) {
+    position: relative;
+    left: 0rem;
+}
+
+
+}
+@keyframes imagencursos {
+    0% {
+        left: 20rem;
+    }
+    50% {
+        left: 10rem;
+    } 
+
+    100% {
+        left: 0rem;
+    }
+}
+.propuestames {
+    a {
+        color: #380762;
+      &:hover {
+          color: white;
+      }
+    }
+}
+.propuestasdelmes {
+    margin-top: 10rem;
+    position: relative;
+    text-align: center;
+    background-color: #e1ccf1;
+    border-radius: 30px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.propuestasdelmes-titulo {
+    background-image: $degrade-1;
+color: white;
+width: 70%;
+border-radius: 10px;
+margin: 0 auto;
+    h2 {
+       
+        text-transform: uppercase;
+    }
+}
+.textopropuesta1, .textopropuesta2 {
+    width: 30rem;
+    border-radius: 10px;
+    position: relative;
+    right: 6rem;
+    h3 {
+        text-transform: uppercase;
+    }
+    @media (min-width:1140px) {
+        position: relative;
+    right: 6rem;}
+    @media (max-width:1140px) {
+        position: relative;
+        left: 0rem;
+        top: 2rem;
+    }
+}
+
+.imagenpropuesta1 img, .imagenpropuesta2 img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 3rem;
+    z-index: 1;
+    @media (min-width:1140px) {
+        margin-top: 0;
+        position: relative;
+        width: 80%;
+    right: 1rem;}
+    }
+    
+ .propuesta1, .propuesta2 {
+    position: relative;
+    justify-content: center;
+    margin: 5rem 3rem 0 3rem ;
+    
+}
+
+.propuesta1-boton1, .propuesta2-boton1 {
+
+    position: relative;
+
+    margin: auto;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    transition: all 1s;
+    color: #380762;
+
+}
+
+.propuesta1-boton1 a, .propuesta2-boton1 a {
+    position: relative;
+    
+    color: #451c69;
+}
+
+.propuesta1-boton1:hover, .propuesta2-boton1:hover {
+    transform: scale(1.2);
+}
+
+.modal-body {
+    color: black;
+}
