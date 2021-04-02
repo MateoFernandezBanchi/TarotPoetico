@@ -182,7 +182,7 @@ CAROUSEL */
   margin: 0 auto;
   position: relative;
   top: 10rem;
-  width: 80%;
+  width: 85%;
   margin-bottom: 15rem;
   background-color: #e1ccf1;
   border-radius: 40px;
@@ -314,6 +314,17 @@ h5 {
   margin-bottom: 1rem;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .mainindex h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .mainindex {
+    width: 80%;
+    top: 3rem;
+  }
+}
 @media (min-width: 360px) {
   .mainindex {
     margin: 2rem 2rem 2rem 2rem;
@@ -334,7 +345,6 @@ h5 {
   position: relative;
   border-radius: 3rem;
   padding: 8rem 4rem 6rem 4rem;
-  right: 1rem;
 }
 .index-main-parrafo:hover {
   background-color: #380762;
@@ -349,20 +359,18 @@ h5 {
     padding: 8rem 2rem;
   }
 }
-@media (max-width: 1140px) {
-  .index-main-parrafo {
-    position: relative;
-    right: 3rem;
-  }
-}
 .index-main-parrafo h4 {
   font-size: 1.3rem;
   text-align: center;
   color: #451c69;
   transition: 1s;
-  font-style: italic;
   font-weight: bold;
   margin-left: 0;
+}
+@media (max-width: 768px) {
+  .index-main-parrafo h4 {
+    font-size: 17px;
+  }
 }
 .index-main-parrafo h4:hover {
   color: white;
@@ -377,9 +385,14 @@ h5 {
   position: relative;
   width: 100%;
   margin: 0%;
-  top: 2rem;
+  top: 1rem;
   transition: all 1s;
   /* margin-top: 2.5rem; */
+}
+@media (max-width: 768px) {
+  .index-main-imagen img {
+    margin-bottom: 1rem;
+  }
 }
 
 /* BOTONES */
@@ -499,7 +512,10 @@ h5 {
 .main-nosotros {
   margin: 0 auto;
   margin-top: 3rem;
-  width: 50%;
+  width: 100%;
+  background-color: #e1ccf1;
+  padding: 3rem;
+  border-radius: 30px;
 }
 @media (max-width: 860px) {
   .main-nosotros {
@@ -563,14 +579,14 @@ h5 {
   background-image: linear-gradient(to right, #380762 0%, #4c256e 100%);
   color: white;
   position: relative;
-  width: 20%;
+  width: 25%;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   box-shadow: 6px 6px #2b0117;
-  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 .carla h3,
 .matias h3,
@@ -998,7 +1014,7 @@ h5 {
 }
 
 body {
-  background-color: #c4b0d3;
+  background-color: black;
   text-align: left;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
@@ -1011,6 +1027,11 @@ button {
 /* ESTILOS GENERALES */
 p {
   font-size: 18px;
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
 }
 
 a {
@@ -1026,6 +1047,11 @@ h1 {
   font-family: "Domine", serif;
   color: white;
   text-align: center;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 }
 
 h2 {
