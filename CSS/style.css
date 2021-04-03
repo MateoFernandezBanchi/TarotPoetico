@@ -8,7 +8,13 @@ footer a {
   color: white;
 }
 footer h4 {
+  font-weight: bold;
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  footer h4 {
+    font-size: 16px;
+  }
 }
 
 .footer {
@@ -18,6 +24,7 @@ footer h4 {
 }
 @media (max-width: 768px) {
   .footer {
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,6 +57,19 @@ footer h4 {
 
 .instagram img {
   width: 50px;
+}
+
+.icono_instagram, .icono_facebook, .icono_youtube {
+  font-size: 40px;
+}
+@media (max-width: 768px) {
+  .icono_instagram, .icono_facebook, .icono_youtube {
+    font-size: 25px;
+  }
+}
+
+.facebook {
+  margin-right: 1rem;
 }
 
 /* HEADER */
@@ -181,11 +201,9 @@ CAROUSEL */
 .position-carousel {
   margin: 0 auto;
   position: relative;
-  top: 10rem;
-  width: 85%;
-  margin-bottom: 15rem;
-  background-color: #e1ccf1;
-  border-radius: 40px;
+  top: 18rem;
+  width: 75%;
+  margin-bottom: 25rem;
 }
 @media (max-width: 780px) {
   .position-carousel {
@@ -196,6 +214,11 @@ CAROUSEL */
 h5 {
   font-size: 25px;
   font-weight: bold;
+}
+
+.carousel-inner {
+  background-color: #e1ccf1;
+  border-radius: 40px;
 }
 
 .imagen-carousel:nth-child(1) img {
@@ -255,7 +278,9 @@ h5 {
 
 /* SECTION2 */
 .section-index-2 {
-  background-color: #380762;
+  position: relative;
+  top: 10rem;
+  background-image: linear-gradient(to right, #9269A1 0%, #380762 100%);
   justify-content: center;
   padding-bottom: 4rem;
   border-radius: 20px;
@@ -342,9 +367,9 @@ h5 {
 }
 
 .index-main-parrafo {
-  position: relative;
-  border-radius: 3rem;
+  border-radius: 2.8rem;
   padding: 8rem 4rem 6rem 4rem;
+  margin-right: 0.8rem;
 }
 .index-main-parrafo:hover {
   background-color: #380762;
@@ -558,16 +583,15 @@ h5 {
 }
 
 .fotogrupo {
-  width: 200px;
+  width: 230px;
 }
 
 .imagenesgrupo {
   position: absolute;
   right: 0px;
   transition: opacity 1.5s ease-out;
-}
-.imagenesgrupo img {
-  width: 300px;
+  border-radius: 20px;
+  width: 100%;
 }
 .imagenesgrupo:hover {
   opacity: 0;
@@ -576,30 +600,8 @@ h5 {
 .carla,
 .matias,
 .mateo {
-  background-image: linear-gradient(to right, #380762 0%, #4c256e 100%);
-  color: white;
-  position: relative;
   width: 25%;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-shadow: 6px 6px #2b0117;
-  margin-bottom: 3rem;
-}
-.carla h3,
-.matias h3,
-.mateo h3 {
-  font-size: 22px;
-  font-weight: bold;
-}
-@media (max-width: 1140px) {
-  .carla,
-.matias,
-.mateo {
-    width: 15rem;
-  }
+  position: absolute;
 }
 
 .historiagrupo {
@@ -675,9 +677,6 @@ h5 {
 }
 @media (max-width: 1140px) {
   .cursos-main-parrafo {
-    position: relative;
-    right: 2.5rem;
-    top: 0rem;
     padding-top: 2rem;
   }
 }
@@ -743,6 +742,11 @@ h5 {
   border-radius: 30px;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+@media (max-width: 1140px) {
+  .propuestasdelmes {
+    width: 80%;
+  }
 }
 
 .propuestasdelmes-titulo {
@@ -843,12 +847,17 @@ h5 {
 }
 
 .maincontacto {
+  margin-top: 3rem;
   text-align: center;
+  border-radius: 30px;
+  background-color: #e1ccf1;
 }
 
 .formulario {
-  margin: 5rem 3rem 5rem 3rem;
+  border-radius: 30px;
+  margin: 5rem 3rem 5rem 6.5rem;
   text-align: center;
+  background-color: #e1ccf1;
 }
 
 .formulario-texto {
@@ -1014,7 +1023,7 @@ h5 {
 }
 
 body {
-  background-color: black;
+  background-image: linear-gradient(to bottom, #0b0113 0%, #21053a 100%);
   text-align: left;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;

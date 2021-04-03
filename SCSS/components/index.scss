@@ -16,11 +16,11 @@ CAROUSEL */
 .position-carousel {
     margin: 0 auto;
     position: relative;
-    top: 10rem;
-    width: 85%;
-    margin-bottom: 15rem;
-    background-color: #e1ccf1;
-    border-radius: 40px;
+    top: 18rem;
+    width: 75%;
+    margin-bottom: 25rem;
+    // background-color: #e1ccf1;
+    
     
 
     @media (max-width:780px) {
@@ -30,6 +30,11 @@ CAROUSEL */
 h5 {
     font-size: 25px;
     font-weight: bold;
+}
+
+.carousel-inner {
+    background-color: #e1ccf1;
+    border-radius: 40px;
 }
 .imagen-carousel:nth-child(1) img {
     // width: 55rem;
@@ -85,7 +90,9 @@ h5 {
 /* SECTION2 */
 
 .section-index-2 {
-    background-color: #380762;
+    position: relative;
+    top: 10rem;
+    background-image: $degrade-1;
     justify-content: center;
     padding-bottom: 4rem;
     border-radius: 20px;

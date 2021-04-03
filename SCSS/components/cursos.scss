@@ -21,9 +21,6 @@
     padding: 8rem 2rem 3rem 2rem;
     text-align: center;
     @media (max-width:1140px) {
-        position: relative;
-        right: 2.5rem;
-        top: 0rem;
         padding-top: 2rem;
 
     }
@@ -91,6 +88,9 @@
     border-radius: 30px;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    @media (max-width:1140px) {
+        width: 80%;
+    }
 }
 
 .propuestasdelmes-titulo {
