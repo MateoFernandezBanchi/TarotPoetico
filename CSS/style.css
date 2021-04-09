@@ -199,15 +199,9 @@ h3,
 CAROUSEL */
 .position-carousel {
   margin: 0 auto;
-  position: relative;
-  top: 18rem;
+  margin-top: 5rem;
   width: 75%;
-  margin-bottom: 25rem;
-}
-@media (max-width: 780px) {
-  .position-carousel {
-    margin-bottom: 20rem;
-  }
+  margin-bottom: 10rem;
 }
 
 h5 {
@@ -277,19 +271,15 @@ h5 {
 
 /* SECTION2 */
 .section-index-2 {
-  position: relative;
-  top: 10rem;
+  width: 80%;
+  margin: 0 auto;
+  margin: 0 2rem;
+  margin-top: 10rem;
   background-image: linear-gradient(to right, #9269A1 0%, #380762 100%);
   justify-content: center;
   padding-bottom: 4rem;
   border-radius: 20px;
   box-shadow: 6px 6px #2b0117;
-}
-@media (min-width: 1140px) {
-  .section-index-2 {
-    width: 80%;
-    margin: 0 auto;
-  }
 }
 
 .publicidadindex {
@@ -308,11 +298,21 @@ h5 {
 
 .youtubepromocional {
   margin-top: 5rem;
-  margin-right: 4rem;
+}
+@media (min-width: 1000px) {
+  .youtubepromocional {
+    margin-right: 4rem;
+  }
 }
 .youtubepromocional iframe {
   width: 120%;
   height: 90%;
+}
+@media (max-width: 768px) {
+  .youtubepromocional iframe {
+    width: 100%;
+    height: 120%;
+  }
 }
 
 /* MAIN */
@@ -326,8 +326,7 @@ h5 {
 
 .mainindex {
   margin: 0 auto;
-  position: relative;
-  top: 7rem;
+  margin-top: 7rem;
   margin-bottom: 5rem;
   background-color: #e1ccf1;
   border-radius: 40px;
@@ -341,22 +340,6 @@ h5 {
 @media (max-width: 768px) {
   .mainindex h1 {
     font-size: 2rem;
-  }
-}
-@media (max-width: 768px) {
-  .mainindex {
-    width: 80%;
-    top: 3rem;
-  }
-}
-@media (min-width: 360px) {
-  .mainindex {
-    margin: 2rem 2rem 2rem 2rem;
-  }
-}
-@media (min-width: 1140px) {
-  .mainindex {
-    margin: 1rem 0rem 5rem 6.5rem;
   }
 }
 
@@ -746,27 +729,22 @@ h5 {
 }
 
 .cursos-main-imagen img {
-  position: relative;
   width: 100%;
   transition: all 1s;
-  right: 3rem;
+}
+@media (min-width: 768px) {
+  .cursos-main-imagen img {
+    margin-left: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  .cursos-main-imagen img {
+    margin-left: 0;
+  }
 }
 @media (max-width: 1140px) {
   .cursos-main-imagen img {
-    margin-left: 2rem;
     animation: imagencursos 3s;
-  }
-}
-@media (min-width: 768px) {
-  .cursos-main-imagen img {
-    position: relative;
-    left: 3rem;
-  }
-}
-@media (min-width: 768px) {
-  .cursos-main-imagen img {
-    position: relative;
-    left: 0rem;
   }
 }
 
@@ -800,48 +778,61 @@ h5 {
 @media (max-width: 1140px) {
   .propuestasdelmes {
     width: 80%;
+    margin-top: 5rem;
   }
 }
 
 .propuestasdelmes-titulo {
   background-image: linear-gradient(to right, #9269A1 0%, #380762 100%);
   color: white;
-  width: 70%;
+  width: 100%;
   border-radius: 10px;
   margin: 0 auto;
 }
 .propuestasdelmes-titulo h2 {
   text-transform: uppercase;
 }
+@media (max-width: 1140px) {
+  .propuestasdelmes-titulo {
+    width: 100%;
+  }
+}
+
+.propuesta1, .propuesta2 {
+  position: relative;
+  justify-content: center;
+  margin: 5rem 3rem;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #380762 0%, #9269A1 100%);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+@media (max-width: 1140px) {
+  .propuesta1, .propuesta2 {
+    margin: 0 auto;
+    margin: 5rem 0;
+    padding-bottom: 5rem;
+  }
+}
 
 .textopropuesta1, .textopropuesta2 {
   width: 30rem;
   border-radius: 10px;
-  position: relative;
-  right: 6rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+.textopropuesta1 ul, .textopropuesta2 ul {
+  margin-right: 2rem;
 }
 .textopropuesta1 h3, .textopropuesta2 h3 {
   text-transform: uppercase;
-}
-@media (min-width: 1140px) {
-  .textopropuesta1, .textopropuesta2 {
-    position: relative;
-    right: 6rem;
-  }
-}
-@media (max-width: 1140px) {
-  .textopropuesta1, .textopropuesta2 {
-    position: relative;
-    left: 0rem;
-    top: 2rem;
-  }
 }
 
 .imagenpropuesta1 img, .imagenpropuesta2 img {
   width: 100%;
   border-radius: 20px;
   margin-top: 3rem;
-  z-index: 1;
 }
 @media (min-width: 1140px) {
   .imagenpropuesta1 img, .imagenpropuesta2 img {
@@ -850,12 +841,6 @@ h5 {
     width: 80%;
     right: 1rem;
   }
-}
-
-.propuesta1, .propuesta2 {
-  position: relative;
-  justify-content: center;
-  margin: 5rem 3rem 0 3rem;
 }
 
 .propuesta1-boton1, .propuesta2-boton1 {
@@ -997,11 +982,16 @@ h5 {
   padding-bottom: 3rem;
   border-radius: 30px;
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 .main-sesiones div img {
   margin-top: 3rem;
-  width: 110%;
+  width: 100%;
+}
+@media (min-width: 1140px) {
+  .main-sesiones div img {
+    width: 120%;
+  }
 }
 
 .parrafo-main-sesiones {
@@ -1020,9 +1010,14 @@ h5 {
 
 .modalidadlectura {
   margin: 0 auto;
-  margin-top: 10rem;
+  margin-top: 5rem;
   background-color: #e1ccf1;
   border-radius: 30px;
+}
+@media (max-width: 1140px) {
+  .modalidadlectura {
+    margin-top: 0rem;
+  }
 }
 
 .modalidadlectura1,
@@ -1082,6 +1077,12 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
+@media (max-width: 1000px) {
+  body {
+    background-image: none;
+    background-color: #e1ccf1;
+  }
+}
 
 button {
   font-size: 20px;
@@ -1118,13 +1119,24 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 22px;
   text-align: center;
   font-family: "Domine", serif;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
 }
 
 h3 {
   font-family: "Domine", serif;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 25px;
+  }
 }
 
 ul {
@@ -1133,22 +1145,12 @@ ul {
 
 .modalidadlectura1,
 .modalidadlectura2,
-.textohistoria,
-.textopropuesta1,
-.textopropuesta2 {
+.textohistoria {
   background-image: linear-gradient(to right, #380762 0%, #9269A1 100%);
   color: white;
   padding: 15px;
   position: relative;
   text-align: center;
-}
-
-main,
-.propuestasmes,
-.integrantes,
-.textohistoria {
-  position: relative;
-  top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

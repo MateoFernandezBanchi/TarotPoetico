@@ -8,15 +8,16 @@
 
 
 body {
-    // background-color: rgb(204, 199, 199);
-    // background-color: rgb(223, 223, 223);
-    //  background-color: #c4b0d3;
-    // background-color:#0b0113;
     background-image: $degrade-4;
     text-align: left;
     font-family: 'Roboto', sans-serif;
     ;
     overflow-x: hidden;
+
+    @media (max-width:1000px) {
+        background-image: none;
+        background-color: $colorseccion;
+    }
 }
 
 button {
@@ -54,13 +55,21 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 22px;
     text-align: center;
     font-family: 'Domine', serif;
+    @media (min-width:768px) {
+        font-size: 30px;
+    }
+    
 }
 
 h3 {
     font-family: 'Domine', serif;
+    font-size: 20px;
+    @media (min-width:768px) {
+        font-size: 25px;
+    }
 }
 
 ul {
@@ -70,22 +79,14 @@ ul {
 
 .modalidadlectura1,
 .modalidadlectura2,
-.textohistoria,
-.textopropuesta1,
-.textopropuesta2 {
+.textohistoria
+// .textopropuesta1,
+// .textopropuesta2 
+{
     background-image: $degrade-2;
     color: white;
     padding: 15px;
     position: relative;
     text-align: center;
 
-}
-
-
-main,
-.propuestasmes,
-.integrantes,
-.textohistoria {
-    position: relative;
-    top: 50px;
 }

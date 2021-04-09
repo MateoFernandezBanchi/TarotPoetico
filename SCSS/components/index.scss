@@ -15,17 +15,10 @@ CAROUSEL */
 
 .position-carousel {
     margin: 0 auto;
-    position: relative;
-    top: 18rem;
+   margin-top: 5rem;
     width: 75%;
-    margin-bottom: 25rem;
+    margin-bottom: 10rem;
     // background-color: #e1ccf1;
-    
-    
-
-    @media (max-width:780px) {
-        margin-bottom: 20rem;
-    }
 }
 h5 {
     font-size: 25px;
@@ -90,18 +83,16 @@ h5 {
 /* SECTION2 */
 
 .section-index-2 {
-    position: relative;
-    top: 10rem;
+    width: 80%;
+    margin: 0 auto;
+    margin: 0 2rem;
+    margin-top: 10rem;
     background-image: $degrade-1;
     justify-content: center;
     padding-bottom: 4rem;
     border-radius: 20px;
     box-shadow: 6px 6px $violeta-3;
-
-    @media (min-width: 1140px) {
-        width: 80%;
-        margin: 0 auto;
-    }
+ 
 }
 
 .publicidadindex {
@@ -119,10 +110,16 @@ h5 {
 
 .youtubepromocional {
     margin-top: 5rem;
+    @media (min-width:1000px) {
     margin-right: 4rem;
+}
     iframe {
         width: 120%;
         height: 90%;
+        @media (max-width:768px) {
+            width: 100%;
+            height: 120%;
+        }
     }
 }
 

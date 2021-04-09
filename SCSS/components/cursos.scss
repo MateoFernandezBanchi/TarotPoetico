@@ -2,7 +2,7 @@
 
 @import "../variables/color.scss";
 
-
+// MAIN
 .cursos-main-title {
     background-image: $degrade-1;
    width: 100%;
@@ -38,26 +38,18 @@
      }
 
 .cursos-main-imagen img {
-    position: relative;
-    // top: 3rem;
     width: 100%;
     transition: all 1s;
-    right: 3rem;
+    @media (min-width:768px) {
+        margin-left: 5rem;
+    }
+    @media (min-width:992px) {
+        margin-left: 0;
+    }
+
     @media (max-width:1140px) {
-    margin-left: 2rem;
     animation: imagencursos 3s;
-    
-
 }
-@media (min-width:768px) {
-    position: relative;
-    left: 3rem;
-}
-@media (min-width:768px) {
-    position: relative;
-    left: 0rem;
-}
-
 
 }
 @keyframes imagencursos {
@@ -72,6 +64,9 @@
         left: 0rem;
     }
 }
+
+// SECCION PROPUESTAS DEL MES
+
 .propuestames {
     a {
         color: #380762;
@@ -90,43 +85,61 @@
     padding-bottom: 3rem;
     @media (max-width:1140px) {
         width: 80%;
+        margin-top: 5rem;
     }
 }
 
 .propuestasdelmes-titulo {
     background-image: $degrade-1;
 color: white;
-width: 70%;
+width: 100%;
 border-radius: 10px;
 margin: 0 auto;
     h2 {
-       
         text-transform: uppercase;
     }
+    @media (max-width:1140px) {
+        width: 100%;
+    }
 }
+
+.propuesta1, .propuesta2 {
+    position: relative;
+    justify-content: center;
+    margin: 5rem 3rem;
+    border-radius: 30px;
+        background-image: $degrade-2;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    
+    
+    @media (max-width:1140px) {
+       margin: 0 auto;
+       margin: 5rem 0;
+       padding-bottom: 5rem;
+    }
+    
+}
+
 .textopropuesta1, .textopropuesta2 {
     width: 30rem;
     border-radius: 10px;
-    position: relative;
-    right: 6rem;
+    margin-top: 3rem;
+    text-align: center;
+    ul {
+        margin-right: 2rem;
+    }
     h3 {
         text-transform: uppercase;
     }
-    @media (min-width:1140px) {
-        position: relative;
-    right: 6rem;}
-    @media (max-width:1140px) {
-        position: relative;
-        left: 0rem;
-        top: 2rem;
-    }
+
 }
 
 .imagenpropuesta1 img, .imagenpropuesta2 img{
     width: 100%;
     border-radius: 20px;
     margin-top: 3rem;
-    z-index: 1;
     @media (min-width:1140px) {
         margin-top: 0;
         position: relative;
@@ -134,12 +147,7 @@ margin: 0 auto;
     right: 1rem;}
     }
     
- .propuesta1, .propuesta2 {
-    position: relative;
-    justify-content: center;
-    margin: 5rem 3rem 0 3rem ;
-    
-}
+
 
 .propuesta1-boton1, .propuesta2-boton1 {
 

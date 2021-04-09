@@ -30,10 +30,13 @@ padding-top: 5rem;
 padding-bottom: 3rem;
 border-radius: 30px;
 margin: 0 auto;
-margin-top: 3rem;
+margin-top: 6rem;
     div img {
         margin-top: 3rem;
-        width: 110%;
+        width: 100%;
+        @media (min-width:1140px) {
+            width: 120%;
+        }
      
     }
 
@@ -57,9 +60,12 @@ margin-top: 3rem;
 
 .modalidadlectura {
     margin: 0 auto;
-    margin-top: 10rem;
+    margin-top: 5rem;
     background-color: #e1ccf1;
     border-radius: 30px;
+    @media (max-width:1140px) {
+        margin-top: 0rem;
+    }
     
 }
 
