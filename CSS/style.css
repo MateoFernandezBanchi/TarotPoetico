@@ -206,7 +206,7 @@ CAROUSEL */
   margin: 0 auto;
   margin-top: 5rem;
   width: 75%;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 h5 {
@@ -227,6 +227,13 @@ h5 {
 
 .imagen-carousel {
   margin-top: 5rem;
+}
+@media (max-width: 768px) {
+  .imagen-carousel {
+    width: 160%;
+    position: relative;
+    right: 10rem;
+  }
 }
 
 .imagen-carousel:nth-child(2) img {
@@ -252,6 +259,12 @@ h5 {
 .indicadores-carousel {
   margin-bottom: 5rem;
 }
+@media (max-width: 768px) {
+  .indicadores-carousel button {
+    position: relative;
+    top: 9rem;
+  }
+}
 
 .carousel-texto1 {
   position: relative;
@@ -274,6 +287,12 @@ h5 {
   width: 70%;
 }
 
+@media (max-width: 768px) {
+  .carousel-control-next, .carousel-control-prev {
+    margin-top: 20rem;
+  }
+}
+
 /* SECTION2 */
 .section-index-2 {
   width: 80%;
@@ -294,6 +313,11 @@ h5 {
 @media (min-width: 900px) {
   .section-index-2 {
     margin-left: 8rem;
+  }
+}
+@media (max-width: 992px) {
+  .section-index-2 {
+    margin-top: 1rem;
   }
 }
 
@@ -375,10 +399,12 @@ h5 {
 .index-main-parrafo:hover h4 {
   color: #F9D2E7;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .index-main-parrafo {
     margin: 0 auto;
+    margin-right: 3rem;
     padding: 8rem 2rem;
+    width: 85%;
   }
 }
 @media (max-width: 900px) {
@@ -736,7 +762,7 @@ h5 {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 @media (max-width: 768px) {
   .historiagrupo {
@@ -813,6 +839,12 @@ h5 {
     padding-top: 2rem;
   }
 }
+@media (max-width: 767px) {
+  .cursos-main-parrafo {
+    width: 85%;
+    margin-left: 2rem;
+  }
+}
 .cursos-main-parrafo:hover {
   background-color: #380762;
   transition: 3s;
@@ -864,6 +896,7 @@ h5 {
 
 .propuestasdelmes {
   margin-top: 10rem;
+  margin-bottom: 5rem;
   position: relative;
   text-align: center;
   background-color: #e1ccf1;
@@ -977,7 +1010,7 @@ h5 {
 
 .maincontacto {
   margin-top: 7rem;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
   padding-bottom: 2rem;
   text-align: center;
   border-radius: 30px;
@@ -1113,6 +1146,7 @@ h5 {
 .modalidadlectura {
   margin: 0 auto;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   background-color: #e1ccf1;
   border-radius: 30px;
 }
@@ -1127,6 +1161,7 @@ h5 {
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
   border-radius: 20px;
   border: 4px solid black;

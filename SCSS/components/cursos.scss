@@ -22,7 +22,10 @@
     text-align: center;
     @media (max-width:1140px) {
         padding-top: 2rem;
-
+    }
+    @media (max-width:767px) {
+        width: 85%;
+        margin-left: 2rem;
     }
      &:hover {
             background-color: #380762;
@@ -77,6 +80,7 @@
 }
 .propuestasdelmes {
     margin-top: 10rem;
+    margin-bottom: 5rem;
     position: relative;
     text-align: center;
     background-color: #e1ccf1;
