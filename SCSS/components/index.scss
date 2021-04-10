@@ -92,6 +92,13 @@ h5 {
     padding-bottom: 4rem;
     border-radius: 20px;
     box-shadow: 6px 6px $violeta-3;
+
+    @media (min-width:768px) {
+        margin-left: 4.5rem;
+    }
+    @media (min-width:900px) {
+        margin-left: 8rem;
+    }
  
 }
 

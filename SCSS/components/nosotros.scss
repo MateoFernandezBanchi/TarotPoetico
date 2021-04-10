@@ -3,16 +3,16 @@
 @import "../variables/color.scss";
 
 .main-nosotros {
-    //  margin: 5rem 8rem 4rem 20rem;
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 7rem;
     width: 100%;
     background-color: $colorseccion;
     padding: 3rem;
     border-radius: 30px;
     @media (max-width:860px) {
-        margin-top: 6rem;
-        width: 80%;
+        margin-top: 3rem;
+        width: 100%;
+
     }
 
 }
@@ -24,19 +24,6 @@
 
 }
 
-.presentacion {
-    background-color: rgba($violeta-1, 0.7);
-    border-radius: 15px;
-    text-align: center;
-    margin-bottom: 2rem;
-
-    p {
-        width: 60%;
-        margin: 0 auto;
-
-    }
-}
-
 .sobrenosotros {
     background-image: linear-gradient(to right, #9269A1 0%, #380762 100%);
     color: white;
@@ -45,24 +32,19 @@
 
 }
 
-.espectaculo2 img {
-
-    width: 599px;
-}
-
 .integrantes {
     position: relative;
     display: flex;
     justify-content: space-evenly;
     background-color: white;
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 40rem;
     background-color: $colorseccion;
-    height: 100%;
     @media (max-width:768px) {
         flex-direction: column;
         align-items: center;
-        height: 1900px;
+        margin-top: 1%;
+        margin-bottom: 0;
     }
     
 }
@@ -71,56 +53,38 @@
     width: 80%;
  }
 
-// .imagenesgrupo {
-//     position: absolute;
-//     right: 0px;
-//     transition: opacity 1.5s ease-out;
-//     border-radius: 20px;
-//     width: 100%;
-
-//     &:hover {
-//         opacity: 0;
-//     }
-// }
-
 .carlacontainer, .matiascontainer, .mateocontainer {
     position: relative;
     width: 20%;
-    background-color: blanchedalmond;
-    @media (max-width:768px){
+    @media (max-width:992px) {
+        bottom: 25rem;
         width: 60%;
+        // height: 500px;
+    }
+    @media (max-width:766px){
+        width: 60%;
+        width: 80%;
     }
  }
 
 
 .carla,.matias,.mateo {
      width: 100%;
+     height: 400px;
      position: absolute;
      transform-style: preserve-3d;
      transition: all 0.6s ease;
      &:hover {
         transform:rotateY(180deg);
+        @media (max-width:992px) {
+            transform: none;
+        }
      }
-//     background-image: $degrade-3;
-//     color: white;
-//     position: absolute;
-//     width: 25%;
-//     border-radius: 20px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     text-align: center;
-//     box-shadow: 6px 6px $violeta-3;
-//     margin-bottom: 3rem;
+     @media (max-width:992px) {
+         position: relative;
+         margin-top: 3rem;
+     }
 
-//     h3 {
-//         font-size: 22px;
-//         font-weight: bold;
-//     }
-
-//     @media (max-width:1140px) {
-//         width: 15rem;
-//     }
 }
 
 .mateofront, .carlafront, .matiasfront {
@@ -129,19 +93,36 @@
     backface-visibility: hidden;
     img {
         width: 100%;
+        height: 420px;
         border-radius: 20px;
     }
+    @media (max-width:992px) {
+        transform: none;
+        position: relative;
+        width: 0%;
+    }
+    
 }
 
 .mateoback, .carlaback, .matiasback {
+    
     position: absolute;
     width: 100%;
+    height: 420px;
     backface-visibility: hidden;
     transform:rotateY(180deg);
     background-image: $degrade-3;
     color: white;
     text-align: center;
     border-radius: 20px;
+    @media (max-width:992px) {
+        position: relative;
+        transform: none;
+    }
+    
+    p {
+        font-size: 16px;
+    }
 
 }
 
@@ -157,6 +138,8 @@
 }
 
 
+// SECCION HISTORIA DEL GRUPO
+
 .historiagrupo {
     position: relative;
     display: flex;
@@ -170,39 +153,43 @@
 }
 
 .textohistoria {
-    position: relative;
     width: 80%;
-    margin-bottom: 3rem;
-    bottom: 200px;
     border-radius: 20px;
     box-shadow: 6px 6px $violeta-3;
 
     @media (min-width:768px) {
-        width: 50%;
+        width: 80%;
+
+        @media (min-width:1140px) {
+            width: 50%;
+        }
     }
 
 }
 
 .imagenespectaculo img {
-    width: 80%;
-    margin-top: 50px;
+    margin: 0 auto;
     border-radius: 20px;
 
-    @media (min-width:600px) {
-        width: 100%;
-    }
 
-    @media (min-width:768px) {
-        width: 60%;
-    }
-
-    @media (min-width:992px) {
-        width: 100%;
-    }
-
-    @media (max-width:768px) {
+    @media (max-width:1140px) {
         margin-left: 2.5rem;
+        margin-top: 3rem;
+        width: 90%;
     }
+
+     @media (max-width:760px) {
+        margin-left: 2.5rem;
+        margin-top: 3rem;
+        width: 80%;
+    }
+
+
+
+
+    @media (min-width:1140px) {
+     width: 100%;
+     }
 
 }
 

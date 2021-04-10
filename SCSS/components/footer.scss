@@ -39,8 +39,11 @@ footer {
     bottom: 0;
 
     a img {
-        width: 50px;
+        width: 45px;
         border-radius: 25px;
+        @media (max-width:1140px) {
+            width: 35px;
+        }
     }
     
 }

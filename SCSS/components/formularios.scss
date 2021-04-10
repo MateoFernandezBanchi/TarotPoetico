@@ -1,0 +1,16 @@
+.formularioinscripcion {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 2rem 2rem 0rem 4rem;
+    color: white;
+    text-align: center;
+    background-color: #230B35;
+    @media (max-width:768px) {
+        margin: 2rem 2rem 0rem 2rem;
+    }
+    
+}
+
+.form-group label {
+    color: white;
+}
