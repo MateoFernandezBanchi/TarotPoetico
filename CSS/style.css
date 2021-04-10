@@ -77,32 +77,6 @@ footer h4 {
 }
 
 /* HEADER */
-header nav ul {
-  display: flex;
-  align-self: center;
-  bottom: 13px;
-  justify-content: space-around;
-  background-color: rgba(56, 7, 91, 0.93);
-  text-align: center;
-}
-
-header a {
-  color: white;
-}
-header a img {
-  width: 50px;
-}
-
-header,
-p,
-h1,
-h2,
-h3,
-.youtubepromocional,
-.modalidadlectura {
-  padding: 15px;
-}
-
 .navbar-brand img {
   width: 50px;
 }
@@ -138,61 +112,6 @@ h3,
 }
 .nav-link:hover {
   color: #F9D2E7;
-}
-
-.link-blanco {
-  color: white;
-}
-
-.navegacion {
-  margin-top: 0;
-  position: fixed;
-  width: 100%;
-  height: 10%;
-  z-index: 5;
-  top: 0;
-}
-.navegacion a {
-  text-decoration: none;
-  font-weight: bold;
-  justify-content: center;
-  font-size: 1.2rem;
-}
-.navegacion a:hover {
-  color: #F9D2E7;
-}
-@media (max-width: 768px) {
-  .navegacion a {
-    font-size: 14px;
-  }
-}
-
-.navegacion-interna {
-  position: relative;
-  bottom: 1rem;
-  margin: 0;
-}
-
-/* BOTONES NAV */
-.boton-menu {
-  align-self: center;
-  transition: all 1s;
-  position: relative;
-  right: 2rem;
-}
-.boton-menu:hover {
-  transform: scale(1.1);
-}
-
-.boton-menu-logo {
-  align-self: center;
-  position: relative;
-}
-.boton-menu-logo a img {
-  transition: all 0.5s;
-}
-.boton-menu-logo a img:hover {
-  transform: scale(1.1);
 }
 
 /* INDEX */
@@ -1130,7 +1049,7 @@ h5 {
 }
 
 .parrafo-main-sesiones {
-  background-image: url("../imagenes/background2.jpg");
+  background-image: linear-gradient(to right, #380762 0%, #4c256e 100%);
   color: white;
   border-radius: 15px;
 }
@@ -1278,6 +1197,16 @@ h3 {
 
 ul {
   list-style-type: none;
+}
+
+header,
+p,
+h1,
+h2,
+h3,
+.youtubepromocional,
+.modalidadlectura {
+  padding: 15px;
 }
 
 .modalidadlectura1,
