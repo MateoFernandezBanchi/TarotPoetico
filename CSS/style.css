@@ -10,6 +10,7 @@ footer a {
 footer h4 {
   font-weight: bold;
   font-size: 20px;
+  color: #F9D2E7;
 }
 @media (max-width: 768px) {
   footer h4 {
@@ -48,6 +49,7 @@ footer h4 {
 
 .youtube, .contacto, .redessociales {
   align-self: center;
+  text-align: center;
 }
 
 .youtube a img {

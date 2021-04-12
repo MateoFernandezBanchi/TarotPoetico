@@ -1,6 +1,5 @@
 /* FOOTER */
-
-
+@import "../variables/color.scss";
 
 footer {
     background-color: black;
@@ -12,6 +11,7 @@ footer {
     h4 {
         font-weight: bold;
         font-size: 20px;
+        color: $violeta-2;
         @media (max-width:768px) {
             font-size: 16px;
         }
@@ -50,6 +50,7 @@ footer {
 
 .youtube, .contacto, .redessociales {
     align-self: center;
+    text-align: center;
 }
 
 .youtube a img {
