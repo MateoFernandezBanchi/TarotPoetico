@@ -2,7 +2,7 @@
 
 @import "../variables/color.scss";
 
-// MAIN
+// TITULO MAIN CURSOS
 .cursos-main-title {
     background-image: $degrade-1;
    width: 100%;
@@ -14,7 +14,7 @@
 
 }
 }
-
+// TEXTO MAIN CURSOS
 .cursos-main-parrafo {
     border-radius: 3rem;
     z-index: 2;
@@ -22,7 +22,9 @@
     text-align: center;
     @media (max-width:1140px) {
         padding-top: 2rem;
+        background-color: #380762;
     }
+
     @media (max-width:767px) {
         width: 85%;
         margin-left: 2rem;
@@ -40,6 +42,7 @@
         
      }
 
+     // IMAGEN MAIN CURSOS
 .cursos-main-imagen img {
     width: 100%;
     transition: all 1s;
@@ -55,24 +58,19 @@
 }
 
 }
-@keyframes imagencursos {
-    0% {
-        left: 20rem;
-    }
-    50% {
-        left: 10rem;
-    } 
-
-    100% {
-        left: 0rem;
-    }
-}
 
 // SECCION PROPUESTAS DEL MES
 
 .propuestames {
+    @media (max-width:992px) {
+    padding-top: 2rem;
+}
     a {
         color: #380762;
+        @media (max-width:1140px) {
+            color:white;
+        }
+    
       &:hover {
           color: white;
       }
@@ -85,7 +83,7 @@
     text-align: center;
     background-color: #e1ccf1;
     border-radius: 30px;
-    padding-top: 3rem;
+    padding-top:1rem;
     padding-bottom: 3rem;
     @media (max-width:1140px) {
         width: 80%;
@@ -97,14 +95,13 @@
     background-image: $degrade-1;
 color: white;
 width: 100%;
+padding: 2rem;
 border-radius: 10px;
 margin: 0 auto;
     h2 {
         text-transform: uppercase;
     }
-    @media (max-width:1140px) {
-        width: 100%;
-    }
+
 }
 
 .propuesta1, .propuesta2 {

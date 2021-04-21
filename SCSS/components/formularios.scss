@@ -1,4 +1,4 @@
-.formularioinscripcion {
+.formularioinscripcion, .modal-content {
     border: 1px solid white;
     border-radius: 10px;
     margin: 2rem 2rem 0rem 4rem;
@@ -11,6 +11,21 @@
     
 }
 
+.modal-body {
+    color: white;
+}
+
 .form-group label {
     color: white;
+}
+
+.form-control {
+    background-color: $colorseccion;
+   
+    &:focus {
+        background-color: $violeta-2;
+        box-shadow: none;
+        border: solid 2px $violeta-1;
+    }
+
 }

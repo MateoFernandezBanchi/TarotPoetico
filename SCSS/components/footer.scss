@@ -4,7 +4,16 @@
 footer {
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 2rem;
+    text-align: center;
+    @media (max-width:768px) {
+         font-size: 16px;
+        display: flex;
+       flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+     
+    }
     a {
         color: white;
     }
@@ -12,37 +21,26 @@ footer {
         font-weight: bold;
         font-size: 20px;
         color: $violeta-2;
-        @media (max-width:768px) {
-            font-size: 16px;
-        }
+       
     }
 }
-
-.footer {
-   padding: 2rem;
-   text-align: center;
-   
-
-   @media (max-width: 768px) {
-       text-align: left;
-    display: flex;
-  flex-direction: column;
-   align-items: center;
-   margin: 0 auto;
-}
-}
-
-
 .whatsapp {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 3rem;
+    bottom: 1rem;
+    @media (max-width:992px) {
+        right: 1rem;
+    }
 
     a img {
+        transition: 0.5s;
         width: 45px;
         border-radius: 25px;
         @media (max-width:1140px) {
             width: 35px;
+        }
+        &:hover {
+            transform: scale(1.2);
         }
     }
     
@@ -67,14 +65,19 @@ footer {
     width: 50px;
 }
 
-.icono_instagram, .icono_facebook, .icono_youtube {
+.icono_instagram, .icono_facebook, .icono_youtube  {
   font-size: 40px;
   @media (max-width:768px) {
       font-size: 25px;
   }
 }
 
-
+.fa-envelope {
+    font-size: 30px;
+    @media (max-width:768px) {
+        font-size: 20px;
+    }
+}
 .facebook {
     margin-right: 1rem;
 }

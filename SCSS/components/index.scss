@@ -18,7 +18,6 @@ CAROUSEL */
    margin-top: 5rem;
     width: 75%;
     margin-bottom: 5rem;
-    // background-color: #e1ccf1;
 }
 h5 {
     font-size: 25px;
@@ -29,12 +28,6 @@ h5 {
     background-color: #e1ccf1;
     border-radius: 40px;
 }
-.imagen-carousel:nth-child(1) img {
-    // width: 55rem;
-    width: $ancho - 20;
-    position: relative;
-    left: 8rem;
-}
 .imagen-carousel {
     margin-top: 5rem;
     @media (max-width:768px) {
@@ -43,21 +36,22 @@ h5 {
         right: 10rem;
     }
 }
+.imagen-carousel:nth-child(1) img {
+    width: $ancho - 30;
+    margin-left: 10rem;
+}
+
 .imagen-carousel:nth-child(2) img{
-    // width: 40rem;
-    width: $ancho - 40;
-    position: relative;
-    left: 15rem;
+       width: $ancho - 30;
+    margin-left: 9rem;
 }
 .imagen-carousel:nth-child(3) img {
      width: $ancho - 30;
-    
-    position: relative;
-    left: 11rem;
+    margin-left: 11rem;
 }
 
 .fondo-texto {
-    background-color: #380762;
+    background-color:$violeta-1;
 }
 .fondo-texto p, .fondo-texto h5 {
     color: white;
@@ -80,9 +74,9 @@ h5 {
 }
 .carousel-texto2 {
     position: relative;
-    left: 15rem;
+    left: 10rem;
     bottom: 6rem;
-    width: 60%;
+    width: 70%;
 }
 .carousel-texto3 {
     position: relative;
@@ -91,37 +85,24 @@ h5 {
     width: 70%;
 }
 
-.carousel-control-next, .carousel-control-prev {
-    @media (max-width:768px) {
-        margin-top: 20rem;
-    }
-}
-
-
+// .carousel-control-next, .carousel-control-prev {
+//     @media (max-width:768px) {
+//         margin-top: 20rem;
+//     }
+// }
 
 /* SECTION2 */
 
 .section-index-2 {
     width: 80%;
     margin: 0 auto;
-    margin: 0 2rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
     background-image: $degrade-1;
     justify-content: center;
     padding-bottom: 4rem;
     border-radius: 20px;
     box-shadow: 6px 6px $violeta-3;
 
-    @media (min-width:768px) {
-        margin-left: 4.5rem;
-    }
-    @media (min-width:900px) {
-        margin-left: 8rem;
-    }
-    @media (max-width:992px) {
-        margin-top: 1rem;
-    }
- 
 }
 
 .publicidadindex {
@@ -132,9 +113,13 @@ h5 {
     text-align: center;
     background-color: rgba(0,0,0,0.5);
     @media (max-width:768px) {
-        margin: 2rem 2rem 0rem 2rem;
+        margin: 4rem 2rem 0rem 2rem;
     }
     
+}
+
+.publicidadindex-texto {
+    margin-top: 2rem;
 }
 
 .youtubepromocional {

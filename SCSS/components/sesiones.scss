@@ -31,6 +31,11 @@ padding-bottom: 3rem;
 border-radius: 30px;
 margin: 0 auto;
 margin-top: 7rem;
+@media (max-width:768px) {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
     div img {
         margin-top: 3rem;
         width: 100%;
@@ -46,15 +51,20 @@ margin-top: 7rem;
     background-image: $degrade-3;
     color: white;
     border-radius: 15px;
-
+    text-align: center;
     h2 {
+        padding-top: 1rem;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 22px;
     }
+    
 }
 
 .sesiones p {
-    font-size: 20px;
+    font-size: 18px;
+    @media (max-width:768px) {
+        font-size: 16px;
+    }
 }
 
 
@@ -66,12 +76,18 @@ margin-top: 7rem;
     border-radius: 30px;
     @media (max-width:1140px) {
         margin-top: 0rem;
+        background-image: $degrade-4;
     }
     
 }
 
 .modalidadlectura1,
 .modalidadlectura2 {
+    background-image: $degrade-2;
+    color: white;
+    padding: 15px;
+    position: relative;
+    text-align: center;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 2rem;
@@ -83,6 +99,8 @@ margin-top: 7rem;
         padding-right: 2rem;
     }
 }
+
+
 
 .modalidadlectura2-boton1,
 .modalidadlectura1-boton1 {

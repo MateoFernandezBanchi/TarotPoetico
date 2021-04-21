@@ -28,12 +28,11 @@
  <!-- logo -->
  <link rel="icon" type="image/png" href="Imagenes/logo.png" />
 
-  
-
+  <!-- meta -->
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Tarot Poético</title>
+ <title>Tarot Poético - Cursos, sesiones y arte con Tarot</title>
 
   <!-- SEO -->
 
@@ -51,7 +50,7 @@
   <meta property="og:title" content="Tarot Poetico">
   <meta property="og:description" content="Grupo de artistas y tarotistas.
     Investigamos el Tarot como un lenguaje reflexivo, creativo y poético.">
-  <meta property="og:image" content="../imagenes/logo.png">
+  <meta property="og:image" content="Imagenes/nosotros.png">
   <meta property="og:site_name" content="Tarot Poético">
   <meta property="og:author" content="Tarot Poético">
   <meta property="og:url" content="www.tarotpoetico.com.ar">
@@ -60,7 +59,7 @@
 <!-- NAVEGACION BOOTSTRAP -->
 
 <body>
-
+<header>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <button class="navbar-toggler" type="button" 
     data-toggle="collapse" data-target="#navbarNav" 
@@ -87,23 +86,24 @@
       </ul>
     </div>
   </nav>
-  
-  <main class="mainindex container">
+</header>
 
-    <!-- MAIN - ADELANTO SECCION NOSOTROS -->
+   <!-- MAIN INDEX -->
+   <main class="mainindex container">
 
     <div class="index-main row">
 
-      <div id="carouselExampleControls" class="carousel slide col" data-ride="carousel">
+      <!-- CAROUSEL FOTOS -->
+      <div id="carouselExampleControls" class="carousel slide col-sm-12 col-md-12 col-lg-7" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="Imagenes/nosotros.png" alt="First slide">
+            <img class="d-block w-100" src="Imagenes/nosotros.png" alt="Imagen del grupo 1">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="Imagenes/nosotros2.png" alt="Second slide">
+            <img class="d-block w-100" src="Imagenes/nosotros3.png" alt="Imagen del grupo 2">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="Imagenes/cursos 1.png" alt="Third slide">
+            <img class="d-block w-100" src="Imagenes/cursos 1.png" alt="Imagen del grupo 3">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -115,11 +115,8 @@
           <span class="sr-only"></span>
         </a>
       </div>
-      <!-- <div class="index-main-imagen col-sm-12 col-md-12 col-lg-7">
-        <a href="nosotros.html" target="_blank">
-          <img src="imagenes/nosotros.png" alt="Imagen del grupo" srcset="" class="img-responsive">
-        </a>
-      </div> -->
+
+      <!-- MAIN TEXTO -->
 
       <div class="index-main-parrafo col-sm-12 col-md-12 col-lg-5">
 
@@ -129,15 +126,17 @@
 
         <div>
           <a href="nosotros.html">
-            <h4>Somos un grupo integrado por artistas y tarotistas.
-              Investigamos el Tarot como lenguaje reflexivo, creativo y poético.</h4>
+            <h2>Somos un grupo integrado por artistas y tarotistas.</h2>
+             <p> Investigamos el Tarot como lenguaje reflexivo, creativo y poético. </p>
           </a>
         </div>
-        <div class="index-boton5">
+        <div class="index-boton1">
         <a href="nosotros.html">¡Conocenos!</a>
         </div>
 
-      </div> <!-- INDEX-MAIN-PARRAFO -->
+      </div> 
+      
+      <!-- INDEX-MAIN-PARRAFO -->
 
   </main>
   
@@ -151,7 +150,9 @@
     
   </div>
   <div class="publicidadindex col-sm-8 col-md-8 col-lg-4">
-    <!-- Publicidad de algun curso en vigencia -->
+
+    <!-- TEXTO PUBLICIDAD -->
+
     <div class="publicidadindex-texto">
       <h3>Fábrica de historias</h3>
       <p>Taller de Escritura y Tarot </p>
@@ -159,12 +160,11 @@
          y dramáticos con las imágenes del Tarot implicando 
          cuerpo, palabra, atención y emociones!</p>
     </div>
-     <!-- <div class="publicidad-boton d-flex">
-      <div class="index-boton4"><a href="cursos.html">+ Info</a></div>
-    
-    </div>   -->
+
+
+    <!-- MODAL -->
    <!-- Button trigger modal -->
-   <button type="button" class="index-boton4" data-toggle="modal" data-target="#exampleModalLong">
+   <button type="button" class="index-boton2" data-toggle="modal" data-target="#exampleModalLong">
     Inscribirse
 </button>
 
@@ -225,7 +225,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Inscribirme</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Inscribirme</button>
             </div>
         </div>
     </div>
@@ -288,14 +288,14 @@
   </div>
 
   <!-- FOOTER -->
-
   <footer>
-    <!-- Aqui va todo lo conceriente a contacto y redes sociales -->
-    <div class="row footer">
+    <div class="row">
 
+      <!-- MAIL -->
       <div class="contacto col sm-3 md-3 lg-3">
-        <h4>Contacto</h4>
-        <a href="https://mail.google.com/" target="_blank">tarotpoetico@gmail.com</a>
+        <a href="contacto.html">  <h4>  Contacto </h4>  </a>
+        <a href="https://mail.google.com/" target="_blank"> tarotpoetico@gmail.com</a> 
+       
       </div>
 
       <div class="redessociales col sm-3 md-3 lg-3">

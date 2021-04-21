@@ -16,7 +16,8 @@ body {
 
     @media (max-width:1000px) {
         background-image: none;
-        background-color: $colorseccion;
+        // background-color: $colorseccion;
+        background-image: $degrade-4;
     }
 }
 
@@ -28,7 +29,7 @@ button {
 
 p {
     font-size: 18px;
-    @media (max-width: 768px) {
+    @media (max-width:766px) {
         font-size: 16px;
     }
 }
@@ -48,18 +49,18 @@ h1 {
     font-family: 'Domine', serif;
     color: white;
     text-align: center;
-    @media (max-width: 768px) {
-        font-size: 1.5rem;
+    @media (max-width: 766px) {
+        font-size: 2rem;
     } 
 
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
     font-family: 'Domine', serif;
-    @media (min-width:768px) {
-        font-size: 30px;
+    @media (max-width:766px) {
+        font-size: 20px;
     }
     
 }
@@ -79,23 +80,10 @@ ul {
 header,
 p,
 h1,
-h2,
-h3,
 .youtubepromocional,
 .modalidadlectura {
     padding: 15px;
-}
-
-.modalidadlectura1,
-.modalidadlectura2,
-.textohistoria
-// .textopropuesta1,
-// .textopropuesta2 
-{
-    background-image: $degrade-2;
-    color: white;
-    padding: 15px;
-    position: relative;
-    text-align: center;
-
+    @media (max-width:992px) {
+        padding: 10px;
+    }
 }
