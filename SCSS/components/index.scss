@@ -18,6 +18,9 @@ CAROUSEL */
    margin-top: 5rem;
     width: 75%;
     margin-bottom: 5rem;
+    @media (max-width:768px) {
+        display: none;
+    }
 }
 h5 {
     font-size: 25px;
@@ -85,12 +88,6 @@ h5 {
     width: 70%;
 }
 
-// .carousel-control-next, .carousel-control-prev {
-//     @media (max-width:768px) {
-//         margin-top: 20rem;
-//     }
-// }
-
 /* SECTION2 */
 
 .section-index-2 {
@@ -135,5 +132,39 @@ h5 {
             height: 120%;
         }
     }
+}
+
+.index-sesiones {
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: $colorseccion;
+    width: 80%;
+    @media (min-width:769px) {
+        display: none;
+    } 
+}
+
+.index-sesiones-imagen {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    align-self: center;
+    img {
+    width: 100%;
+}
+}
+
+.index-sesiones-texto {
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-image: $degrade-1;
 }
 

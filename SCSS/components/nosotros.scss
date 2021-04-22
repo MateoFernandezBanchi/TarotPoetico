@@ -2,12 +2,15 @@
 
 @import "../variables/color.scss";
 
+// MAIN PAGINA NOSOTROS
+
 .main-nosotros {
     margin: 0 auto;
-    margin-top: 7rem;
+    margin-top: 5rem;
     width: 100%;
     background-color: $colorseccion;
-    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
     border-radius: 30px;
     @media (max-width:860px) {
         margin-top: 3rem;
@@ -42,6 +45,8 @@
 
 }
 
+// SECCION INTEGRANTES DEL GRUPO
+
 .integrantes {
     position: relative;
     display: flex;
@@ -60,11 +65,19 @@
 }
 
 .fotogrupo {
-    width: 80%;
+    width: 80%;  
     @media (max-width:992px) {
-        width: 60%;
+        width: 50%;
+    }
+    @media (max-width:768px) {
+        width: 50%;
+    }
+    @media (max-width:424px) {
+        width: 70%;
     }
  }
+
+ //CONTENEDORES GLOBALES
 
 .carlacontainer, .matiascontainer, .mateocontainer {
     position: relative;
@@ -80,6 +93,7 @@
     }
  }
 
+ // ESPACIO PARTICULAR DE CADA INTEGRANTE
 
 .carla,.mateo {
      width: 100%;
@@ -123,6 +137,8 @@
 
 }
 
+// LA CARTA 
+
 .mateofront, .carlafront, .matiasfront {
         position: absolute;
     width: 100%;
@@ -135,10 +151,12 @@
     @media (max-width:992px) {
         transform: none;
         position: relative;
-        width: 0%;
+        display: none;
             }
     
 }
+
+// EL CONTENIDO DE CADA PARTICIPANTE
 
 .mateoback, .carlaback, .matiasback {
     h3 {
@@ -154,20 +172,26 @@
     color: white;
     text-align: center;
     border-radius: 20px;
-    @media (max-width:766px) {
-        position: relative;
-        transform: none;
-        height: 85%;
-            }
     @media (max-width:992px) {
         position: relative;
+        top: 25rem;
         transform: none;
         
     }
-    p {
-        font-size: 16px;
-    }
+    @media (max-width:766px) {
+         position: relative;
+         top: 25rem;
+        transform: none;
+        height: 95%;
+            }
+    
+}
 
+.texto-equipo {
+    font-size: 20px;
+     @media (max-width:768px) {
+        font-size: 18px;
+    }
 }
 
 .carlaback {

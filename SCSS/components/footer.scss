@@ -21,17 +21,17 @@ footer {
         font-weight: bold;
         font-size: 20px;
         color: $violeta-2;
+        @media (max-width:768px) {
+            font-size: 18px;
+        }
        
     }
 }
 .whatsapp {
     position: fixed;
-    right: 3rem;
+    right: 1rem;
     bottom: 1rem;
-    @media (max-width:992px) {
-        right: 1rem;
-    }
-
+    
     a img {
         transition: 0.5s;
         width: 45px;

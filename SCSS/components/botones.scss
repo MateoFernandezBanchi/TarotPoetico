@@ -78,7 +78,7 @@
         color: $violeta-1;
         background-color: white;
         box-shadow: 2px 2px $violeta-3;
-
+        transform: scale(1.1);
         a {
             color: $violeta-1;
         }
@@ -122,6 +122,39 @@
         }
     }
 
+}
+
+.index-boton3 {
+    background-color: white;
+    width: 6rem;
+    height: 1.8rem;
+    border-radius: 15px;
+    transition: all 1s;
+    color: $violeta-1;
+    box-shadow: 2px 2px $violeta-3;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 0.2rem;
+
+    &:hover {
+        color: white;
+        background-color: $violeta-1;
+        box-shadow: 2px 2px $violeta-3;
+        transform: scale(1.1);
+        a {
+            color: white;
+        }
+    }
+
+    a {
+        color: $violeta-1;
+        font-size: 16px;
+        &:hover {
+            color: white;
+
+        }
+    }
 }
 
 .boton3 {
